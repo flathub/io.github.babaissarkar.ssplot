@@ -23,8 +23,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/babaissarkar/ssplot/archive/refs/tags/v2.2.5.tar.gz",
-                    "sha256": "fae2464cb1cee9e9a1b4520fdd1bf5c5ac18fea0737a73a36278c6027af888fe"
+                    "url": "https://github.com/babaissarkar/ssplot/archive/refs/tags/v2.3.1.tar.gz",
+                    "sha256": "5fd500950977e0780035bcf75068e02d4647dd1b36a1a81f3f62c7d22e824da2"
                 },
                 {
                     "type": "file",
@@ -32,10 +32,10 @@
                 }
             ],
             "build-commands": [
-                 "desktop-file-edit --set-icon=$FLATPAK_ID SSPlot.AppDir/ssplot.desktop",
-                 "install -Dm644 SSPlot.AppDir/ssplot.png $FLATPAK_DEST/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png",
+                 "desktop-file-edit --set-icon=$FLATPAK_ID packaging/appimage/ssplot.desktop",
+                 "install -Dm644 packaging/appimage/ssplot.png $FLATPAK_DEST/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png",
                  "install -Dm644 $FLATPAK_ID.metainfo.xml -t $FLATPAK_DEST/share/metainfo",
-                 "install -Dm644 SSPlot.AppDir/ssplot.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop",
+                 "install -Dm644 packaging/appimage/ssplot.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop",
                  "install -Dm644 jar/ssplot.jar $FLATPAK_DEST/share/ssplot/ssplot.jar",
                  "install -Dm755 ssplot-run $FLATPAK_DEST/bin/ssplot"
             ]
