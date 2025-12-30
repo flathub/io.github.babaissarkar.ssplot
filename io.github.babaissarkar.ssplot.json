@@ -23,15 +23,22 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/babaissarkar/ssplot/archive/refs/tags/v2.3.1.tar.gz",
-                    "sha256": "5fd500950977e0780035bcf75068e02d4647dd1b36a1a81f3f62c7d22e824da2"
+                    "url": "https://github.com/babaissarkar/ssplot/archive/refs/tags/v2.3.2.tar.gz",
+                    "sha256": "11947baf22bd60823c4c5bb0d0101505b55725ba6d9229f2d7c7ec66e9d54884"
                 },
                 {
                     "type": "file",
                     "path": "ssplot-run"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/babaissarkar/ssplot/releases/download/v2.3.2/ssplot.jar",
+                    "sha256": "c7a5360efe2f50d33d31bd0286fc533337db4e7867e7e3a69421feda36063896"
                 }
             ],
             "build-commands": [
+                 "mkdir -p jar",
+                 "install -Dm644 ssplot.jar jar/ssplot.jar",
                  "desktop-file-edit --set-icon=$FLATPAK_ID packaging/appimage/ssplot.desktop",
                  "install -Dm644 packaging/appimage/ssplot.png $FLATPAK_DEST/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png",
                  "install -Dm644 $FLATPAK_ID.metainfo.xml -t $FLATPAK_DEST/share/metainfo",
