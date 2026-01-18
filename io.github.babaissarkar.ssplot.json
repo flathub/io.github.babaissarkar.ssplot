@@ -23,7 +23,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/babaissarkar/ssplot/archive/refs/tags/v2.3.2.tar.gz",
+                    "url": "https://github.com/babaissarkar/ssplot/archive/refs/tags/v2.3.3.tar.gz",
                     "sha256": "11947baf22bd60823c4c5bb0d0101505b55725ba6d9229f2d7c7ec66e9d54884"
                 },
                 {
@@ -32,8 +32,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/babaissarkar/ssplot/releases/download/v2.3.2/ssplot.jar",
-                    "sha256": "c7a5360efe2f50d33d31bd0286fc533337db4e7867e7e3a69421feda36063896"
+                    "url": "https://github.com/babaissarkar/ssplot/releases/download/v2.3.3/ssplot.jar",
+                    "sha256": "362ca96c68b30adbb60766d84df9cc5fb4ff0fddd15910e779ad47f8083ffe26"
                 }
             ],
             "build-commands": [
